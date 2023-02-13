@@ -1,0 +1,739 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+body {
+background-color: black; 
+}
+
+/*Margen de la lista idiomas*/
+ul#idioma{
+    font-family: 'Amatic SC', monospace;
+      color: white;
+  font-size: 37px;
+  list-style:none;
+  position:absolute;
+  text-align: center;
+  margin-bottom: 20px;
+  top: 350px;
+  left: 1450px;
+}
+
+/*Margenes de idiomas individuales*/
+li#idioma_EN{
+  margin-top: -337px;
+  margin-left: 10px;
+}
+
+li#idioma_ES{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+nav{
+  font-family: 'Amatic SC', monospace;
+  color: white;
+  font-size: 60px;
+  word-spacing: 11px;
+  margin-bottom: 50px;
+}
+
+
+ul#index1{
+  list-style:none;
+  position:absolute;
+  text-align: center;
+  margin-bottom: 20px;
+  top: 355px;
+  left: 260px;
+}
+
+
+ul#index2{
+  list-style:none;
+  position:absolute;
+  text-align: center;
+  margin-bottom: 20px;
+  top: 340px;
+  left: 870px;
+}
+
+li#index1_works{
+  margin-top: 21px;
+  margin-left: 35px;
+}
+
+li#index1_about{
+  margin-top: 90px;
+  margin-left: 36px;
+}
+
+li#index1_contact{
+  margin-top: 90px;
+  margin-left: 30px;
+}
+
+li#index2_academic_works{
+margin-top: 35px;
+    margin-left: -30px;
+}
+
+li#index2_own_creations{
+  margin-top: 120px;
+  margin-left: -27px;
+}
+
+
+
+
+
+
+/*section {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: -1000px;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 0 4px 20px -1px #777;
+  -moz-box-shadow: 0 4px 20px -1px #777;
+  box-shadow: 0 4px 20px -1px #777;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+
+
+footer {
+  color: black;
+  font-family: Verdana;
+  font-size: small;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: grey;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:focus {
+  color: red;
+}
+
+a:hover { 
+  color: yellow;
+}
+
+a:active {
+  background: rgb(160, 160, 160, .4);
+  color: #FFFFFF;
+}
+
+
+.container{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 60px;
+    color: white;
+   position:relative;
+   top: -400px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+
+
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+ul.slider li {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:black;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+
+
+  .container2{
+    font-family: Amatic SC;
+    color: white;
+   background-color: black;
+   position:relative;
+   top: -540px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+/*Pelos*/
+.container3{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: -200px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+  /* container3*/
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider3{
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+/**/
+ul.slider3 li {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:black;
+}
+
+ul.slider3 li img{
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+ul.slider3 li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider3 li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+
+
+.container4{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: 100px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+  /* container4*/
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*coche*/
+ul.slider4{
+  background-color: black;
+  font-family: Amatic SC;
+  font-size: 30px;
+  color: white;
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+ul.slider4 li {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:black;
+}
+
+ul.slider4 li img{
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+ul.slider4 li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider4 li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+
+/*gladiadora*/
+.container5{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: 400px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider5{
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+ul.slider5 li {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:black;
+}
+
+ul.slider5 li img{
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+ul.slider5 li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider5 li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+
+/*La vida de Elssie*/
+.container6{
+     background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: -450px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider6{
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+ul.slider6 li {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:black;
+}
+
+ul.slider6 li img{
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+ul.slider6 li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider6 li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+
+/*planetas*/
+.container21{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 22px;
+    color: white;
+   position:relative;
+   top: 700px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider21{
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+ul.slider21 li {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:black;
+}
+
+ul.slider21 li img{
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+ul.slider21 li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider21 li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+
+
+.container7{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 60px;
+    color: white;
+   position:relative;
+   top: 00px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+
+
+
+
+.menu{
+position:absolute;
+  text-align: center;
+  top: 575px;
+  left:270PX;	
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  background-color: yellow;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+
+/*propias blender*/
+.container8{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: -450px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider8{
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+ul.slider8 li {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:black;
+}
+
+ul.slider8 li img{
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+ul.slider8 li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider8 li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+/*videocurriculum*/
+.container9{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 20px;
+    color: white;
+   position:relative;
+   top: -660px;
+   left:100PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+ /*pisa*/
+.container10{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 20px;
+    color: white;
+   position:relative;
+   top: -890px;
+   left:200PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+   /*stopmotion*/  
+.container11{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 20px;
+    color: white;
+   position:relative;
+   top: -650px;
+   left:200PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+/*Rotoscopia*/
+.container12{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 20px;
+    color: white;
+   position:relative;
+   top: -400px;
+   left:200PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+      /*Fall in love*/ 
+.container13{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 20px;
+    color: white;
+   position:relative;
+   top: -150px;
+   left:195PX;
+   width:  800px;
+   height: 600px;
+  }
+
+/*animations*/
+.container14{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: -350px;
+   left:200PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+  .container15{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: -350px;
+   left:600PX;
+   width:  800px;
+   height: 600px;
+  }
+
+/*animations
+.container15{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: -350px;
+   left:200PX;
+   width:  800px;
+   height: 600px;
+  }*/
+
+
+  /*Enjoy music*/
+.container16{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: 100px;
+   left:195PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+ /*Firma*/
+.container17{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 30px;
+    color: white;
+   position:relative;
+   top: 350px;
+   left:195PX;
+   width:  800px;
+   height: 600px;
+  } 
+
+  /*esp: fall in love*/
+  .container18{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 20px;
+    color: white;
+   position:relative;
+   top: 100px;
+   left:0PX;
+   width:  800px;
+   height: 600px;
+  }
+
+  /*enjoy music*/
+    .container19{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 20px;
+    color: white;
+   position:relative;
+   top: 350px;
+   left:0PX;
+   width:  800px;
+   height: 600px;
+  }
+
+
+    /*logo*/
+    .container20{
+   background-color: black;
+    font-family: Amatic SC;
+     font-size: 20px;
+    color: white;
+   position:relative;
+   top: 610px;
+   left:0PX;
+   width:  800px;
+   height: 600px;
+  } 

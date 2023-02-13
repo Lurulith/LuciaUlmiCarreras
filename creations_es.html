@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lucia Ulmi's Portfolio</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="images/favicon.png">
+  </head>
+  
+  <body>
+<header>
+   <ul id="idioma">
+      <li id=idioma_EN class="EN"><a href="creations.html"><abbr title="English">EN</abbr></a></li>
+      <li id=idioma_ES class="ES"><a href="creations_es.html"><abbr title="Español">ES</abbr></a></li>
+      </ul>
+    </header>
+
+    <nav id="menu">
+      <img src="images/R_works_Academicworks_ownprojects_desplegado.jpg" alt="">  
+      
+      <ul id=index1>
+      <li id=index1_works><a data-image="images/R_works_Academicworks_ownprojects_desplegado.jpg" href="index2_es.html">Trabajos</a></li> 
+      <li id=index1_about><a data-image="images/R_About_Academicworks_ownprojects_desplegado.jpg" href="about_es.html">Sobre mí</a></li>
+      <li id=index1_contact><a data-image="images/R_Contact_Academicworks_ownprojects_desplegado.jpg" href="contact_es.html">CONTACTO</a></li>
+    </ul>
+
+    <ul id=index2>
+      <li id=index2_academic_works><a href="creations_es.html">Creaciones propias</a></li> 
+    </ul>
+
+    </nav>
+
+
+<section>
+
+<div class="container8">
+
+  <ul class="slider8">
+    <li id="slide8_1">
+      <img src="images/Weber.png"/>  
+    </li>
+    <li id="slide8_2">
+      <img src="images/tiburon.png"/>    
+    </li>
+    <li id="slide8_3">
+      <img src="images/alicates.png"/>
+    </li>
+    <li id="slide8_4">
+    <img src="images/secador.png"/>
+    </li>
+    <li id="slide8_5">
+    <img src="images/tornillos.png"/>
+    </li>
+  </ul>
+ 
+  <ul class="menu">
+    <li>
+      <a href="#slide8_1">1</a>
+    </li>
+    <li>  
+      <a href="#slide8_2">2</a>
+    </li>
+    <li>
+      <a href="#slide8_3">3</a>
+    </li>
+        <li>
+      <a href="#slide8_4">4</a>
+    </li>
+        <li>
+      <a href="#slide8_5">5</a>
+    </li>
+
+  </ul>
+  <h2>elementos creados con blender</h2>
+  </div>
+
+<div class="container14">
+<h1>animaciones</h1>
+</div>
+
+<div class="container10">
+<h2>La torre de Pisa - Animación 2D</h2>  
+<iframe width="1200" height="700" src="https://www.youtube.com/embed/ZwmzqfQURFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <div class="container11">
+<h2>La llegada - Stopmotion</h2>  
+<iframe width="1200" height="700" src="https://www.youtube.com/embed/VvqumqRgY1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+
+<div class="container12">
+<h2>Bajo la tormenta - Rotoscopia</h2>
+<iframe width="1200" height="700" src="https://www.youtube.com/embed/YoNJDdRyAY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<div class="container18">
+  <h2>Fall in love - 3D Animation</h2>
+<iframe width="1200" height="700" src="https://www.youtube.com/embed/xkTcYNmXfFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>   
+
+
+<div class="container19">
+<h2>Disfruta la música - Animación 2D</h2>
+<iframe width="1200" height="700" src="https://www.youtube.com/embed/URQraQc2If4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="container20">
+<h2>Logo Lucía Ulmi - Animación 2D</h2>
+<iframe width="1200" height="700" src="https://www.youtube.com/embed/9cavVtf9Ebw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(function(){
+
+  //code here
+  var image = $("#menu").find('img').attr('src');
+  //console.log(image);
+  $("#menu ul li a").mouseover(function(){
+    var currentImage = $(this).attr('data-image');
+  //[ console.log(currentImage)';
+  $(this).parent().parent().parent().find('img').attr("src", currentImage);
+  $("#menu img").css("opacity", "1");
+});
+
+$("#menu ul li a").mouseout(function(){
+  $("#menu img").css("opacity", "1");
+  });
+});
+</script>
+
+  </body>
+</html>

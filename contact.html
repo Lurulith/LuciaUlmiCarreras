@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lucia Ulmi's Portfolio</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="images/favicon.png">
+  </head>
+  
+  <body>
+    
+<header>
+   <ul id="idioma">
+      <li id=idioma_EN class="EN"><a href="contact.html"><abbr title="English">EN</abbr></a></li>
+      <li id=idioma_ES class="ES"><a href="contact_es.html"><abbr title="Español">ES</abbr></a></li>
+      </ul>
+    </header>
+
+
+    <nav id="menu">
+      <img src="images/R_Contact_desplegado.jpg" alt="">
+      <ul id=index1>
+      <li id=index1_works><a data-image="images/R_Works_no_desplegado.jpg" href="index2.html">WORKS</a></li> 
+      <li id=index1_about><a data-image="images/R_About_desplegado.jpg" href="about.html">ABOUT ME</a></li>
+      <li id=index1_contact><a data-image="images/R_Contact_desplegado.jpg" href="contact.html">CONTACT</a></li>
+    </ul>
+    </nav>
+
+    <div class="container15">
+
+<tr>
+<th style="width:70%; text-align:justify; font-weight:normal; font-size:large; color:  white; font-family:Patrick Hand SC"><p> <b> if you want to contact me, please do it through my e-mail address</b>
+<br>lulmi@iesfuentesanluis.org
+</p> </th>
+</tr>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(function(){
+
+  //code here
+  var image = $("#menu").find('img').attr('src');
+  //console.log(image);
+  $("#menu ul li a").mouseover(function(){
+    var currentImage = $(this).attr('data-image');
+  //[ console.log(currentImage)';
+  $(this).parent().parent().parent().find('img').attr("src", currentImage);
+  $("#menu img").css("opacity", "1");
+});
+
+$("#menu ul li a").mouseout(function(){
+  $("#menu img").css("opacity", "1");
+  });
+});
+</script>
+<section>
+<th style="width:70%; text-align:justify; font-weight:normal; font-size:large; font-family:Patrick Hand SC">
+<p>If you wish to get in contact, please send an email to luciaulmi@gmail.com</p>
+</th>
+</section>
+
+  
+  </body>
+</html>

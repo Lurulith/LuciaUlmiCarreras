@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lucia Ulmi's Portfolio</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="images/favicon.png">
+  </head>
+  
+  <body>
+
+
+    <nav id="menu">
+      <img src="images/R_About_desplegado.jpg" alt="">
+
+            <ul id="idioma">
+      <li id=idioma_EN class="EN"><a href="about.html"><abbr title="English">EN</abbr></a></li>
+      <li id=idioma_ES class="ES"><a href="about_es.html"><abbr title="Español">ES</abbr></a></li>
+      </ul>
+
+      <ul id=index1>
+      <li id=index1_works><a data-image="images/R_Works_no_desplegado.jpg" href="index2_es.html">trabajos</a></li> 
+      <li id=index1_about><a data-image="images/R_About_desplegado.jpg" href="about_es.html">sobre mí</a></li>
+      <li id=index1_contact><a data-image="images/R_Contact_desplegado.jpg" href="contact_es.html">CONTACTO</a></li>
+    </ul>
+    </nav>
+
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(function(){
+
+  //code here
+  var image = $("#menu").find('img').attr('src');
+  //console.log(image);
+  $("#menu ul li a").mouseover(function(){
+    var currentImage = $(this).attr('data-image');
+  //[ console.log(currentImage)';
+  $(this).parent().parent().parent().find('img').attr("src", currentImage);
+  $("#menu img").css("opacity", "1");
+});
+
+$("#menu ul li a").mouseout(function(){
+  $("#menu img").css("opacity", "1");
+  });
+});
+</script>
+
+
+<div class="container2">
+<table>
+<tr>
+<th style="text-align:justify"><img src="images/R_imagenperfil.jpg" alt="profile" width="100%"></th>
+<th style="width:70%; text-align:justify; font-weight:normal; font-size:large; color:  white; font-family:Patrick Hand SC"><p> <b> Un poco sobre mí... </b>
+<br>Tengo 29 años, vivo en Valencia y soy estudiante de Animación 3D, videojuegos y entornos interactivos. Mis dos compañeros de vida se llaman Trébol y Ura, un perro mestizo de 14 años y una perra de aguas de 6 años. Nos encanta disfrutar de la naturaleza, siempre que puedo vamos de excursión con mis amigos o viajamos con la familia a zonas rurales. Me gusta ir a patinar y también practico yoga. Me tomo la vida con humor, soy una persona muy payasa, alegre y habladora. Siempre me ha interesado aprender sobre todo tipo de temas. Antes de hacer esta formación, estudié mediación comunicativa y trabajé como entrenadora de perros de asistencia. La excusa perfecta para acabar viviendo con 5 perros en casa. Soy una persona creativa, entusiasta y de mente curiosa. Empecé este ciclo en septiembre de 2021 y sólo uso el ordenador para ver Netflix, y hacer algún trabajo para la uni o el insti en Word o PowerPoint. En este blog encontrarás trabajos realizados durante la formación. El objetivo principal de este portafolio, es tener un escaparate de ellos. Intento que sean originales, de calidad y divertidos. Eso sí, no esperes encontrar animaciones como las de Pixar, o producciones al nivel de Juego de Tronos.
+</p> </th>
+</tr>
+</table>
+</div>
+
+<div class="container9">
+<th style="width:70%; text-align:justify; font-weight:normal; font-size:smaller; color:  white; font-family:Patrick Hand SC"><h2>Videocurriculum</h2></th>
+<div class="">
+<iframe width="1300" height="520" src="https://www.youtube.com/embed/i1NHpIjlUJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+  </body>
+</html>
